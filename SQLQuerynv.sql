@@ -1,6 +1,5 @@
 create database NhanVien3
 use NhanVien3
-drop database NhanVien1
 
 create table TblNguoiDung (
 	Id uniqueidentifier primary key,
@@ -15,7 +14,6 @@ create table TblNguoiDung (
 	NgayCapNhat datetime null,
 	NguoiCapNhat nvarchar(50) null
 )
---DROP TABLE TblNguoiDung
 
 create table TblVaiTro(
 	Id uniqueidentifier primary key,
@@ -29,14 +27,7 @@ create table TblVaiTro(
 	NguoiCapNhat nvarchar(50) null,
 	TrangThai bit not null
 )
-	ALTER TABLE TblNguoiDung
-	ADD CONSTRAINT fk_ND_VT
-	FOREIGN KEY(IdVaiTro) 
-	REFERENCES TblVaiTro(Id)
-	ON DELETE CASCADE 
-	ON UPDATE CASCADE 
 
---DROP TABLE TblVaiTro
 
 create table TblNhanVien (
 	Id uniqueidentifier primary key,
@@ -66,7 +57,6 @@ create table TblKhachHang (
 	TrangThai bit not null
 )
 
---drop table TblKhachHang
 create table TblRaVao ( 
 	Id uniqueidentifier primary key,
 	IdNhanVien uniqueidentifier not null,
@@ -82,9 +72,6 @@ create table TblRaVao (
 	IdKhachHang uniqueidentifier null
 )
 
---alter table TblRaVao drop column Loai
-
---ALTER TABLE TblRaVao ALTER COLUMN IdKhachHang varchar(16) null
 
 create table TblMauThongBao(
 	Id uniqueidentifier primary key,
@@ -124,23 +111,22 @@ create table TblBinhLuan (
 	ON DELETE CASCADE 
 	ON UPDATE CASCADE 
 
---	ALTER TABLE PhanQuyen
---	ADD CONSTRAINT fk_NV_PQ
---	FOREIGN KEY(MaNV) 
---	REFERENCES NhanVien(MaNV)
---	ON DELETE CASCADE 
---	ON UPDATE CASCADE 
+	ALTER TABLE TblNguoiDung
+	ADD CONSTRAINT fk_ND_VT
+	FOREIGN KEY(IdVaiTro) 
+	REFERENCES TblVaiTro(Id)
+	ON DELETE CASCADE 
+	ON UPDATE CASCADE 
 
- --ALTER TABLE BinhLuan DROP CONSTRAINT fk_BL_NV
 
-	ALTER TABLE TblRaVao
+	ALTER TABLE TblThongBao
 	ADD CONSTRAINT fk_NV_RV
 	FOREIGN KEY(IdNhanVien) 
 	REFERENCES TblNhanVien(Id)
 	ON DELETE CASCADE 
 	ON UPDATE CASCADE 
 
-	ALTER TABLE TblRaVao
+	ALTER TABLE TblThongBao
 	ADD CONSTRAINT fk_NV_VP
 	FOREIGN KEY(IdVanPhong) 
 	REFERENCES TblVanPhong(Id)
@@ -154,7 +140,6 @@ create table TblBinhLuan (
 	ON DELETE CASCADE 
 	ON UPDATE CASCADE 
 
---ALTER TABLE TblNguoiDung DROP CONSTRAINT fk_ND_NV
 
 	ALTER TABLE TblNguoiDung
 	ADD CONSTRAINT fk_ND_NND
@@ -163,11 +148,7 @@ create table TblBinhLuan (
 	ON DELETE CASCADE 
 	ON UPDATE CASCADE 
 
-	--ALTER TABLE TblVaiTro DROP CONSTRAINT fk_Q_NND
-	--ALTER TABLE TblNguoiDung DROP CONSTRAINT fk_ND_NND
-	--ALTER TABLE TblNguoiDung DROP CONSTRAINT fk_ND_NV
-
-	ALTER TABLE TblRaVao
+	ALTER TABLE TblThongBao
 	ADD CONSTRAINT fk_RV_MTT
 	FOREIGN KEY(MoTa) 
 	REFERENCES TblMauThongBao(Id)
@@ -175,13 +156,12 @@ create table TblBinhLuan (
 	ON UPDATE CASCADE
 
 	
-	ALTER TABLE TblRaVao
+	ALTER TABLE TblThongBao
 	ADD CONSTRAINT fk_RV_KH
 	FOREIGN KEY(IdKhachHang) 
 	REFERENCES TblKhachHang(Id)
 	ON DELETE CASCADE 
 	ON UPDATE CASCADE
 
---ALTER TABLE TblRaVao DROP CONSTRAINT fk_RV_KH
 
 
