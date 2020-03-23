@@ -1,0 +1,11 @@
+D:\THUCTAP\DuAn1Vr1\DAL\bin\Debug\DAL.dll
+D:\THUCTAP\DuAn1Vr1\DAL\bin\Debug\DAL.pdb
+D:\THUCTAP\DuAn1Vr1\DAL\bin\Debug\SubSonic.dll
+D:\THUCTAP\DuAn1Vr1\DAL\obj\Debug\Public.csprojResolveAssemblyReference.cache
+D:\THUCTAP\DuAn1Vr1\DAL\obj\Debug\DAL.dll
+D:\THUCTAP\DuAn1Vr1\DAL\obj\Debug\DAL.pdb
+F:\ThucTap\DuAn1Vr1\DAL\bin\Debug\DAL.dll
+F:\ThucTap\DuAn1Vr1\DAL\bin\Debug\DAL.pdb
+F:\ThucTap\DuAn1Vr1\DAL\obj\Debug\DAL.dll
+F:\ThucTap\DuAn1Vr1\DAL\obj\Debug\DAL.pdb
+F:\ThucTap\DuAn1Vr1\DAL\obj\Debug\Public.csprojResolveAssemblyReference.cache

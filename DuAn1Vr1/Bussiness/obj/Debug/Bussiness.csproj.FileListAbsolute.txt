@@ -1,0 +1,15 @@
+D:\THUCTAP\DuAn1Vr1\Bussiness\bin\Debug\Bussiness.dll
+D:\THUCTAP\DuAn1Vr1\Bussiness\bin\Debug\Bussiness.pdb
+D:\THUCTAP\DuAn1Vr1\Bussiness\bin\Debug\DAL.dll
+D:\THUCTAP\DuAn1Vr1\Bussiness\bin\Debug\SubSonic.dll
+D:\THUCTAP\DuAn1Vr1\Bussiness\bin\Debug\DAL.pdb
+D:\THUCTAP\DuAn1Vr1\Bussiness\obj\Debug\Bussiness.csprojResolveAssemblyReference.cache
+D:\THUCTAP\DuAn1Vr1\Bussiness\obj\Debug\Bussiness.dll
+D:\THUCTAP\DuAn1Vr1\Bussiness\obj\Debug\Bussiness.pdb
+F:\ThucTap\DuAn1Vr1\Bussiness\bin\Debug\Bussiness.dll
+F:\ThucTap\DuAn1Vr1\Bussiness\bin\Debug\Bussiness.pdb
+F:\ThucTap\DuAn1Vr1\Bussiness\bin\Debug\DAL.dll
+F:\ThucTap\DuAn1Vr1\Bussiness\bin\Debug\DAL.pdb
+F:\ThucTap\DuAn1Vr1\Bussiness\obj\Debug\Bussiness.csprojResolveAssemblyReference.cache
+F:\ThucTap\DuAn1Vr1\Bussiness\obj\Debug\Bussiness.dll
+F:\ThucTap\DuAn1Vr1\Bussiness\obj\Debug\Bussiness.pdb
